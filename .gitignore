@@ -1,0 +1,8 @@
+build/*
+dist/*
+__pycache__
+
+resource/*
+logs/*
+
+nuitka-crash-report.xml
