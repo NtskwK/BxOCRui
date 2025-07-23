@@ -1,18 +1,15 @@
 import json
 import re
-from datetime import datetime
+
 from typing import List
 from loguru import logger as log
 from tqdm import tqdm
 
 from numpy import ndarray
-from paddleocr import PaddleOCR
 
 from config import config
 from model import pipeline
 from classes import invoice_content
-
-ocr = PaddleOCR(paddlex_config="PaddleOCR.yaml")
 
 base_key_words = [
     "invoice_date",
