@@ -1,6 +1,3 @@
-# PaddleOCR模型目录
-model_dir: "model/"
-
 # 大模型配置
 retriever_config:
   module_name: "retriever"
