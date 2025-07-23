@@ -1,6 +1,10 @@
 # BaoxiaoOCR
 
-一款用于识别发票内容以及提取发票信息的小工具
+BaoxiaoOCR是一款用于识别发票内容以及提取发票信息的小工具
+
+<img src="docs/homepage.png" alt="homepage" width="60%">
+
+<img src="docs/new_invoice.png" alt="new_invoice" width="60%">
 
 本项目使用 PaddlePaddleOCR 以及 LLM 对发票图片的内容进行识别并提取出关键信息。
 
