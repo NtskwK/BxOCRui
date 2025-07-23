@@ -7,16 +7,14 @@ requires-python = ">=3.10"
 dependencies = [
     "fastapi[standard]>=0.116.1",
     "loguru>=0.7.3",
-    "nuitka>=2.7.12",
     "numpy>=2.2.6",
     "onnxruntime-gpu>=1.22.0",
     "paddleocr>=3.1.0",
+    "paddlepaddle-gpu>=3.1.0",
     "pillow>=11.3.0",
-    "pyinstaller>=6.14.2",
     "pywebview>=5.4",
     "pyyaml>=6.0.2",
     "pyzbar>=0.1.9",
-    "rapidocr>=3.2.0",
     "setuptools>=80.9.0",
 ]
 
