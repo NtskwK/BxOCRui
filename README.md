@@ -1,6 +1,8 @@
+<!-- markdownlint-disable MD033 -->
+
 # BaoxiaoOCR
 
-BaoxiaoOCR是一款用于识别发票内容以及提取发票信息的小工具
+BaoxiaoOCR 是一款用于识别发票内容以及提取发票信息的小工具
 
 <img src="docs/homepage.png" alt="homepage" width="60%">
 
@@ -8,7 +10,7 @@ BaoxiaoOCR是一款用于识别发票内容以及提取发票信息的小工具
 
 本项目使用 PaddlePaddleOCR 以及 LLM 对发票图片的内容进行识别并提取出关键信息。
 
-本项目基于 pywebview 构建。前端使用`React19` + `vite`构建页面，并通过 WSGI 进行访问。后端使用 [Javascript–Python bridge](https://pywebview.flowrl.com/guide/usage.html#communication-between-javascript-and-python) 进行通信(这相当于直接用 JS/TS 调用 python 函数，而不是通过http协议访问后端 api server)。
+本项目基于 pywebview 构建。前端使用`React19` + `vite`构建页面，并通过 WSGI 进行访问。后端使用 [Javascript–Python bridge](https://pywebview.flowrl.com/guide/usage.html#communication-between-javascript-and-python) 进行通信(这相当于直接用 JS/TS 调用 python 函数，而不是通过 http 协议访问后端 api server)。
 
 ## 开发
 
@@ -18,9 +20,9 @@ BaoxiaoOCR是一款用于识别发票内容以及提取发票信息的小工具
 
 ### 配置
 
-`PaddleOCR.yaml`文件为PaddleX管道配置，详情参见[PaddleX文档](https://paddlepaddle.github.io/PaddleX/latest/)。
+`PaddleOCR.yaml`文件为 PaddleX 管道配置，详情参见[PaddleX 文档](https://paddlepaddle.github.io/PaddleX/latest/)。
 
-`config.yaml`文件为大模型配置，默认的配置是调用本地ollama。你可以在ollama使用以下指令快速安装运行。
+`config.yaml`文件为大模型配置，默认的配置是调用本地 ollama。你可以在 ollama 使用以下指令快速安装运行。
 
 ```bash
 ollama pull qwen2.5:0.5b
@@ -28,17 +30,17 @@ ollama pull zyw0605688/gte-large-zh:latest
 ollama pull qwen2.5vl:7b
 
 # 允许任意源
-set OLLAMA_ORIGINS=* 
+set OLLAMA_ORIGINS=*
 
 # 启动ollama服务器
 ollama serve
 ```
 
-若本地不便部署大模型，也可以选用第三方的api服务。
+若本地不便部署大模型，也可以选用第三方的 api 服务。
 
 ### 构建
 
-本项目使用[`uv`](https://docs.astral.sh/uv/)作为Python的包管理器，你可以使用如下命令快速配置Python依赖。
+本项目使用[`uv`](https://docs.astral.sh/uv/)作为 Python 的包管理器，你可以使用如下命令快速配置 Python 依赖。
 
 ```bash
 # 如果你还没有uv，可以通过pip安装他
@@ -60,7 +62,7 @@ pnpm install && pnpm build
 
 #### 编译后端
 
-```
+```bash
 pip install uv
 uv sync
 uv run pyinstall main.spec
